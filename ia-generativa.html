@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evidencias — IA Generativa</title>
+
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+      /* Contenedor de botones superiores */
+.top-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Botón IA */
+.btn-ia {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Botón Políticas */
+.btn-poli {
+  background: #2196F3;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-idx {
+  background: #c15e18;
+  color:white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Efectos hover */
+.btn-ia:hover,
+.btn-poli:hover {
+  opacity: 0.85;
+}
+
+  header{
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h2{
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .container{
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 6px solid #4CAF50;
+  }
+
+  .card img{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: block;
+  }
+    .fila-img {
+    display: flex;
+    gap: 100px; /* espacio entre imágenes */
+  }
+
+  .fila-img img {
+    height: 300px;
+    width: 450px;      /* tamaño ajustable */
+    border-radius: 8px;
+  }
+
+  .card p{
+    color: #444;
+  }
+
+  .card a{
+    color: #4CAF50;
+    font-weight: bold;
+  }
+
+  footer{
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  /* Botón inferior centrado */
+.back-to-top {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-to-top a {
+  display: inline-block;
+  background:#4CAF50 ;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.back-to-top a:hover {
+  opacity: 0.85;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="top-buttons">
+  <a href="politicas.html" class="btn-poli">Ciberseguridad</a>
+  <a href="index.html"class="btn-idx">Chambi Snack</a>
+</div>
+
+<header>
+  <h1>Evidencias — Proyecto IA Generativa</h1>
+  <p>Imágenes, resultados y pruebas de cada actividad</p>
+</header>
+
+<div class="container">
+
+  <!-- EJEMPLO 1 -->
+  <div class="card">
+    <h2>1. Texto → Imagen</h2>
+    <p>Aquí se presentan las imágenes generadas usando IA a partir de descripciones.</p>
+    <img src="imagenes de IAgenerativa/texto-imagen.png" alt="Evidencia de texto a imagen">
+  </div>
+
+  <!-- EJEMPLO 2 -->
+  <div class="card">
+    <h2>2. Libro digital interactivo</h2>
+    <p>Evidencia del libro creado en StoryJumper.</p>
+    <a href="https://www.storyjumper.com" target="_blank">Ver libro</a>
+    <div class="fila-img">
+    <img src="imagenes de IAgenerativa/story jumper.png" alt="Evidencia del libro interactivo">
+    <img src="imagenes de IAgenerativa/storyjumper2.png" alt="Evidencia del libro interactivo">
+    </div>
+  </div>
+
+  <!-- EJEMPLO 3 -->
+  <div class="card">
+    <h2>3. PDF generado</h2>
+    <p>Documento exportado a PDF con IA.</p>
+    <img src="imagenes de IAgenerativa/libropdf.png" alt="Evidencia del PDF">
+  </div>
+
+  <!-- EJEMPLO 4 -->
+  <div class="card">
+    <h2>4. Automatización Excel</h2>
+    <p>Totalización de archivos Excel utilizando IA.</p>
+    <img src="imagenes de IAgenerativa/factura de exel.png" alt="Evidencia Excel">
+  </div>
+
+  <!-- EJEMPLO 5 -->
+  <div class="card">
+    <h2>5. Creación de Audio</h2>
+    <p>Audios generados con IA para narraciones y efectos.</p>
+    <audio controls>
+      <source src="audios de IA/texto a voz.mp3" type="audio/mpeg">
+    </audio>
+     <audio controls>
+      <source src="audios de IA/efecto sonido.mp3" type="audio/mpeg">
+    </audio>
+    <div class="fila-img">
+    <img src="imagenes de IAgenerativa/imaganes IA vos y efectos/texto a voz.png" alt="Evidencia audio">
+    <img src="imagenes de IAgenerativa/imaganes IA vos y efectos/efecto de sonido.png" alt="Evidencia audio">
+    </div>
+  </div>
+
+  <!-- EJEMPLO 6 -->
+  <div class="card">
+    <h2>6. Música generada por IA</h2>
+    <p>Pista musical creada mediante texto → música.</p>
+    <audio controls>
+      <source src="audios de IA/amanecer contigo.mp3" type="audio/mpeg">
+    </audio>
+    <div class="fila-img">
+    <img src="imagenes de IAgenerativa/de texto a musica.png" alt="Evidencia música">
+    </div>
+  </div>
+
+  <!-- EJEMPLO 7 -->
+  <div class="card">
+    <h2>7. Empresa Ficticia</h2>
+    <p>Datos generados sobre la empresa creada como ejemplo.</p>
+    <img src="imagenes/Imagen1.jpg" alt="Evidencia empresa ficticia">
+  </div>
+
+</div>
+  <div class="back-to-top">
+    <a href="#top">Volver al inicio</a>
+  </div>
+
+<footer>
+  © 2025 — Página de Evidencias IA
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Políticas de Ciberseguridad — Chambi Snack</title>
+  <meta name="description" content="Resumen de políticas de ciberseguridad de Chambi Snack: contraseñas, internet, correo, dispositivos, control de acceso, respaldo, seguridad física y redes sociales.">
+  <style>
+    :root{
+      --bg:#f3fbff;
+      --card:#ffffff;
+      --text:#0f2b2b;
+      --muted:#4a6b6b;
+      --accent1:#0ea5a0; /* verde-azulado */
+      --accent2:#1e88e5; /* azul */
+      --radius:12px;
+      --maxw:5100px;
+      --gap:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #f7feff, var(--bg));
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:24px auto;
+      padding:20px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .brand img{
+      width:60px;
+      height:auto;
+      border-radius:8px;
+      object-fit:cover;
+      box-shadow:0 6px 20px rgba(30,136,229,0.08);
+    }
+    .brand h1{
+      margin:0;
+      font-size:1.15rem;
+      color:var(--accent2);
+    }
+    .brand p{margin:0;color:var(--muted);font-size:0.9rem}
+
+    /* botones superiores a la derecha */
+    .top-buttons{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .top-buttons a{
+      text-decoration:none;
+      padding:9px 14px;
+      border-radius:10px;
+      color:white;
+      font-weight:700;
+      font-size:0.95rem;
+    }
+    .btn-ia{background: #4CAF50}
+    .btn-poli{background: #c15e18}
+
+    /* Intro */
+    .intro{
+      background:linear-gradient(90deg, rgba(30,136,229,0.04), rgba(14,165,160,0.03));
+      padding:18px;
+      border-radius:var(--radius);
+      margin-bottom:18px;
+    }
+    .intro h2{margin:0 0 6px 0;color:var(--accent2)}
+    .intro p{margin:0;color:var(--muted)}
+
+    /* Grid de políticas */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:var(--gap);
+      margin-top:18px;
+    }
+
+    .policy{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 8px 28px rgba(11,20,29,0.04);
+      border-left:6px solid rgba(14,165,160,0.12);
+    }
+
+    .policy h3{
+      margin:0 0 8px 0;
+      color:var(--accent1);
+      font-size:1.05rem;
+    }
+    .policy p{
+      margin:0 0 8px 0;
+      color:var(--muted);
+      line-height:1.45;
+      font-size:0.95rem;
+    }
+    .policy .note{font-size:0.86rem;color:#2b6b6b;font-weight:600;margin-top:8px;}
+
+    /* full-width for some sections */
+    .full{grid-column: 1 / -1;}
+
+    footer{
+      margin-top:22px;
+      padding:16px;
+      text-align:center;
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+
+    /* responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      .top-buttons{align-self:stretch;justify-content:flex-end;width:100%}
+    }
+    /* Botón inferior centrado */
+.back-to-top {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-to-top a {
+  display: inline-block;
+  background: linear-gradient(90deg, #0ea5a0, #1e88e5);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.back-to-top a:hover {
+  opacity: 0.85;
+}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="brand" aria-label="Chambi Snack">
+        <!-- si tienes logo, pon logo.png en la misma carpeta -->
+        <img src="imagenes/Imagen1.jpg" alt="Logo Chambi Snack">
+        <div>
+          <h1>Chambi Snack</h1>
+          <p>Políticas de Ciberseguridad — Resumen explicativo</p>
+        </div>
+      </div>
+
+      <div class="top-buttons" role="navigation" aria-label="Accesos rápidos">
+        <!-- Ajusta las rutas si tus archivos tienen otros nombres -->
+        <a class="btn-ia" href="ia-generativa.html">IA Generativa</a>
+        <a class="btn-poli" href="index.html">Chambi Snack</a>
+      </div>
+    </header>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Resumen de Políticas de Seguridad</h2>
+      <p>Estos resúmenes explican, de forma clara y aplicada, las políticas vigentes en Chambi Snack para proteger la confidencialidad, integridad y disponibilidad de la información y los activos de la empresa.</p>
+    </section>
+
+    <main class="grid" role="main">
+      <!-- Contraseñas -->
+      <article class="policy" id="contraseñas">
+        <h3>Política de Contraseñas</h3>
+        <p>Establece requisitos mínimos obligatorios para todas las cuentas corporativas: contraseñas de al menos 12 caracteres que incluyan mayúsculas, minúsculas, números y símbolos. Se exige cambio cada 90 días y está prohibida la reutilización de las últimas 5 contraseñas. El uso de gestores de contraseñas y la activación de 2FA son prácticas recomendadas y obligatorias en accesos remotos o administrativos.</p>
+        <p class="note">Propósito: reducir el riesgo de accesos no autorizados y proteger datos sensibles (clientes, finanzas, inventario).</p>
+      </article>
+
+      <!-- Uso de Internet -->
+      <article class="policy" id="internet">
+        <h3>Política de Uso de Internet</h3>
+        <p>Define el uso laboral permitido (acceso a sistemas internos, comunicaciones con clientes y proveedores, descargas autorizadas) y las prohibiciones (contenido inapropiado, streaming no autorizado, instalación de software no aprobado). El acceso desde redes públicas debe realizarse mediante VPN; la empresa puede monitorear la actividad para prevenir incidentes y mantener productividad.</p>
+        <p class="note">Consecuencia: el uso indebido puede generar advertencias, suspensión de acceso o medidas disciplinarias.</p>
+      </article>
+
+      <!-- Correo Electrónico -->
+      <article class="policy" id="correo">
+        <h3>Política de Correo Electrónico</h3>
+        <p>Regula el uso del correo corporativo para actividades laborales (facturación, atención al cliente, logística). Prohíbe compartir contraseñas, usar el correo para registros personales o reenviar información confidencial sin autorización. Contiene medidas para identificar y reportar phishing: verificar remitente, evitar enlaces sospechosos y reportar correos dudosos al área de sistemas.</p>
+        <p class="note">Medida clave: activación obligatoria de 2FA y formación periódica en identificación de phishing.</p>
+      </article>
+
+      <!-- Dispositivos -->
+      <article class="policy" id="dispositivos">
+        <h3>Política de Dispositivos</h3>
+        <p>Abarca computadoras, laptops, tablets y smartphones corporativos. Requiere antivirus actualizado, bloqueo automático, uso de software autorizado y prohibe instalación de aplicaciones personales o conexión de USB desconocidos. En zonas rurales, se exige sincronización segura y protecciones adicionales (cifrado, almacenamiento seguro).</p>
+        <p class="note">Acción en incidente: reportar pérdida o robo inmediatamente para bloqueo remoto y evaluación de reposición.</p>
+      </article>
+
+      <!-- Control de Acceso -->
+      <article class="policy" id="control-acceso">
+        <h3>Política de Control de Acceso</h3>
+        <p>Define permisos basados en roles (RBAC). Cada usuario tendrá un ID único; el acceso se solicita y asigna según cargo y necesidad operativa. Las cuentas se deshabilitan cuando un empleado cambia de puesto o se retira. Los accesos remotos requieren VPN y 2FA; el área de sistemas gestiona modificaciones y auditorías.</p>
+        <p class="note">Objetivo: minimizar el acceso innecesario a información crítica y mejorar auditoría.</p>
+      </article>
+
+      <!-- Respaldo de Información -->
+      <article class="policy" id="respaldo">
+        <h3>Política de Respaldo de Información</h3>
+        <p>Define frecuencias y medios de copia: respaldos diarios (ventas y e-commerce), semanales (administrativo) y mensuales (imagen completa). Los respaldos se almacenan localmente y en la nube con cifrado AES-256; se realizan pruebas de restauración mensuales y verificaciones periódicas para asegurar integridad y disponibilidad.</p>
+        <p class="note">Retención: respaldos diarios 90 días, semanales 6 meses y mensuales 1 año; eliminación segura certificada.</p>
+      </article>
+
+      <!-- Seguridad Física -->
+      <article class="policy" id="seguridad-fisica">
+        <h3>Política de Seguridad Física</h3>
+        <p>Establece controles de acceso a instalaciones y áreas críticas: registros de visitantes, acompañamiento por personal autorizado, salas de servidores con acceso restringido, cámaras y UPS. Equipos y documentos deben estar protegidos; está prohibida la manipulación de infraestructura sin autorización técnica.</p>
+        <p class="note">Propósito: proteger activos tangibles y evitar acceso no autorizado que ponga en riesgo la información.</p>
+      </article>
+
+      <!-- Redes Sociales -->
+      <article class="policy" id="redes-sociales">
+        <h3>Política de Redes Sociales</h3>
+        <p>Controla la gestión de cuentas oficiales y el comportamiento del personal en redes. Solo personal autorizado puede publicar en nombre de la empresa; está prohibido revelar datos de clientes, publicar información estratégica o contenidos ofensivos. Los administradores de cuentas deben usar 2FA y mejores prácticas para proteger la identidad corporativa.</p>
+        <p class="note">Incluye procedimientos de gestión de incidentes: bloqueo, notificación a gerencia y registro del evento.</p>
+      </article>
+
+      <!-- Control de Incidentes / Plan de respuesta (full width) -->
+      <article class="policy full" id="incidentes">
+        <h3>Plan de Respuesta a Incidentes & Sanciones</h3>
+        <p>Define responsabilidades, comunicación y acciones en caso de incidentes (malware, filtración, robo, error humano). Incluye pasos como notificación al administrador de sistemas, activación de protocolos de restauración, bloqueo de cuentas y registro del incidente. El incumplimiento de políticas puede generar sanciones disciplinarias, suspensión de accesos o acciones legales según la gravedad.</p>
+        <p class="note">Vigencia: las políticas entran en vigor el 01 de noviembre de 2025 (versión 1.0) y serán revisadas periódicamente.</p>
+      </article>
+
+      <!-- Reglamento de Cumplimiento Sanitario e INVIMA (Cambi Snack) -->
+       <article class="policy full" id="incidentes">
+        <h3>Reglamento de Cumplimiento Sanitario e INVIMA</h3>
+        <p>Este reglamento establece las normas internas que garantizan que todos los alimentos comercializados por Chambi Snack cumplan con los requisitos del INVIMA. La empresa solo trabaja con proveedores que poseen Registro Sanitario INVIMA vigente y que aseguran una producción y manejo higiénico de los productos. El personal debe verificar que los alimentos lleguen en buen estado, correctamente etiquetados, sin alteraciones y con fechas de vencimiento válidas.
+          El reglamento también define prácticas obligatorias de almacenamiento: mantener los productos en lugares limpios, secos y ventilados, evitar exposición al sol, controlar plagas y aplicar rotación FIFO “lo primero que entra es lo primero que sale”/FEFO “lo que primero vence es lo primero que sale”. En el transporte y las entregas, los alimentos deben protegerse adecuadamente y cuando aplique mantener cadenas de frío.</p>
+          <p class="note">En la tienda online, Cambi Snack debe publicar información clara del producto, incluyendo registro INVIMA.El incumplimiento del reglamento puede generar sanciones internas o acciones correctivas con proveedores.</p>
+        </article>
+
+
+    </main>
+      <div class="back-to-top">
+    <a href="#top">Volver al inicio</a>
+  </div>
+
+    <footer>
+  © 2025 — Página de políticas de ciberseguridad
+    </footer>
+
+  </div>
+</body>
+</html>
