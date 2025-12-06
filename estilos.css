@@ -1,0 +1,353 @@
+    :root{
+      --orange: #F8A020;
+      --green:  #36A665;
+      --bg:     #FAFBF9;
+      --muted:  #6B7276;
+      --card:   #FFFFFF;
+      --maxw:   1100px;
+      --radius: 12px;
+      --gap:    18px;
+    }
+    /* Contenedor de botones superiores */
+.top-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Botón IA */
+.btn-ia {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Botón Políticas */
+.btn-poli {
+  background: #2196F3;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Efectos hover */
+.btn-ia:hover,
+.btn-poli:hover {
+  opacity: 0.85;
+}
+
+
+    body{
+      margin:0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(180deg,var(--bg),#fff);
+      color:#222;
+    }
+    
+
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:28px;
+      
+    }
+     .container img :hover {
+    filter: contrast(200%);
+    }
+
+    /* HEADER */
+    header{
+      text-align:center;
+      padding:10px 0 25px 0;
+    }
+
+    header img{
+      width:380px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+      
+    }
+
+    header img {
+      transition: transform 0.5s ease;
+    }
+
+   header img:hover {
+      transform: rotate(8deg);
+    }
+    header h1{
+      margin-top:10px;
+      font-size:1.8rem;
+      font-weight:700;
+    }
+
+    header .slogan{
+      color:var(--muted);
+      margin-top:-6px;
+      font-size:0.95rem;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      margin-top:15px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:600;
+      padding:8px 14px;
+      border-radius:8px;
+      background:var(white);
+      color:black;
+      box-shadow: 10px 20px 30px #36A665;
+    }
+    
+    nav a:hover {
+      background-color:#36A665;
+      color:black;
+    }
+    nav a.cta{
+      background:white;
+      color:black;
+      box-shadow:0 20px 30px #36A665;
+      
+    }
+    nav a.cta:hover{
+      background-color:#36A665;
+      color:black;
+
+    }
+
+    /* HERO */
+    .hero{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      padding:28px;
+      border-radius:var(--radius);
+      background:linear-gradient(90deg, rgba(13, 207, 88, 0.704), rgba(248,160,32,0.04));
+      margin:16px 0;
+      flex-wrap:wrap;
+    }
+
+    .hero-left{flex:1}
+
+    .hero h2{
+      margin:0 0 8px 0;
+      font-size:1.6rem;
+    }
+
+    .hero p{color:var(--muted)}
+
+    .btn{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      
+    }
+
+    .btn.primary{background:var(--orange); color:white}
+    .btn.secondary{background:transparent; border:2px solid var(--green); color:var(--green)}
+
+    .hero-right{
+      flex:0 0 320px;
+      max-width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .hero-card{
+      width:100%;
+      border-radius:14px;
+      background:#fff7ee;
+      padding:14px;
+      box-shadow:0 8px 24px rgba(18, 158, 44, 0.838);
+      text-align:center;
+    }
+
+    .hero-card img{
+      max-width:100%; border-radius :100px
+      
+    }
+    .hero-card img {
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: contrast(1); /* estado normal */
+      box-shadow:  0 10px 30px rgba(18, 158, 44, 0.838);
+    }
+
+   .hero-card img:hover {
+      transform: scale(1.05);     /* zoom suave */
+      filter: contrast(1.35);     /* aumenta contraste */
+   }
+   /* Sección Nosotros: imágenes en fila */
+   
+   .nosotros-galeria {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 0px;
+   }
+
+.nosotros-galeria img {
+  width: 600px;
+  height:320px;
+  border-radius: 20px;
+  box-shadow: 0 4px 50px  #36A665;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.nosotros-galeria img:hover {
+  transform: scale(1.60);
+}
+
+    section{margin:28px 0}
+
+    h3{margin-bottom:14px}
+
+    p.lead{color:var(--muted)}
+
+    /* GRID PRODUCTOS */
+    .grid{
+      display:grid;
+      gap:var(--gap);
+    }
+
+    .products.grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:14px;
+      box-shadow:0 6px 18px rgba(11,20,29,0.04);
+    }
+
+    .product-img{
+      height:150px;
+      border-radius:10px;
+      background:linear-gradient(180deg,#fff5ec,#fff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+    .product-img img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;   /* Recorta estético */
+      border-radius: 10px;
+    }
+    .product-img {
+     transition: transform 0.4s ease;   
+     cursor: pointer;                   
+    }
+    .product-img:hover {
+     transform: scale(1.08);           
+    }
+
+    .price{color:var(--orange); font-weight:700; margin-top:8px}
+    .small{font-size:0.9rem;color:var(--muted)}
+
+    /* CONTACTO */
+    .contact{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+    }
+
+    form label{display:block;font-weight:600;margin-bottom:6px}
+    input, textarea{
+      width:100%;
+      padding:10px 12px;
+      border-radius:8px;
+      border:1px solid #e6e6e6;
+      margin-bottom:12px;
+    }
+
+    textarea{min-height:120px}
+
+    footer{
+      margin-top:36px;
+      padding:22px 0;
+      border-top:1px solid #eee;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    @media (max-width:900px){
+      .products.grid{grid-template-columns: repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+    }
+
+    @media (max-width:520px){
+      .products.grid{grid-template-columns:1fr}
+    }
+  .social-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;
+  margin-top: 15px;
+}
+/* Botón inferior centrado */
+.back-to-top {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-to-top a {
+  display: inline-block;
+  background: #c15e18;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.back-to-top a:hover {
+  opacity: 0.85;
+}
+
+/* tamaño y transición */
+.social-icons a i {
+  font-size: 32px;
+  transition: 0.3s ease-in-out;
+}
+
+/* --- Colores individuales --- */
+.social-icons a.wa i {
+  color: #25D366;  /* WhatsApp */
+}
+
+.social-icons a.fb i {
+  color: #1877F2;  /* Facebook */
+}
+
+.social-icons a.ig i {
+  color: #E4405F;  /* Instagram */
+}
+
+/* --- Efecto hover (se agrandan y se aclaran) --- */
+.social-icons a:hover i {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
